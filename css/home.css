@@ -1,0 +1,173 @@
+﻿body {
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    background: #1A2344; /* Background color */
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+.background {
+    flex: 0 0 50%; /* Ensure background takes up 50% of the container */
+    height: 100%;
+    background: url('../assets/images/home_robot.png') no-repeat center center;
+    background-size: cover; /* Ensure the entire image fits within the container */
+    z-index: 1; /* Ensure the background image is behind the content */
+}
+
+.content {
+    flex: 1; /* Content takes up the remaining space */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 2; /* Ensure the content is in front of the background image */
+    color: #FCF4E7; /* Navigation bar color */
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 20px;
+    width: calc(100% - 40px); /* Adjust width */
+}
+
+.nav-item {
+    margin: 0 10px;
+    color: #FCF4E7;
+    font-size: 20px; /* Original font size */
+    font-weight: lighter;
+    text-align: center;
+    cursor: pointer;
+}
+
+.intro-text {
+    margin-top: 80px; /* Move text down */
+    margin-left: 20px; /* Move text to the right */
+    margin-bottom: 20px;
+    width: calc(100% - 40px); /* Adjust width */
+}
+
+.intro-line {
+    font-size: 20px; /* Original font size */
+    font-weight: lighter;
+}
+
+.intro-name {
+    font-size: 20px; /* Original font size */
+    font-weight: bold; /* Bold */
+}
+
+.intro-description {
+    font-size: 20px; /* Original font size */
+    margin-top: 10px;
+    font-weight: lighter;
+}
+
+.content-box {
+    background: #FCF4E7;
+    border-radius: 20px;
+    padding: 20px;
+    padding-bottom: 40px; /* Adding extra space at the bottom */
+    width: calc(100% - 40px);
+    margin-top: 40px; /* Move box down */
+    margin-left: -20px; /* Move box to overlap the robot image */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.phd-info {
+    color: #1A2344;
+    font-size: 20px; /* Smaller font size to fit logo */
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 100px; /* Smaller logo size */
+    height: auto;
+    margin-left: 0px;
+}
+
+.additional-info {
+    color: #1A2344;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.additional-description {
+    font-size: 20px; /* Original font size */
+    font-weight: 200;
+    margin-right: 20px;
+}
+
+.profile-image {
+    width: 120px; /* Original profile image size */
+    height: 120px;
+    margin: 10px 0;
+    display: block;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.30);
+    border-radius: 50%;
+    align-self: flex-end;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .background {
+        flex: 0 0 100%;
+        height: auto;
+        background-size: contain;
+    }
+
+    .content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .intro-text,
+    .content-box {
+        width: 95%;
+    }
+
+    .intro-line,
+    .intro-name,
+    .intro-description,
+    .phd-info,
+    .additional-description {
+        font-size: 16px;
+    }
+
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .logo-image {
+        width: 40px;
+    }
+}
