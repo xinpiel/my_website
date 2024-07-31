@@ -1,0 +1,64 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #232544;
+    color: #ffffff;
+}
+
+nav {
+    background-color: #232544;
+    padding: 10px 0;
+}
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+    }
+
+    nav a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 24px;
+    }
+
+.intro, .title, .bio, .art {
+    padding: 20px;
+    text-align: center;
+}
+
+    .intro p {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .intro strong {
+        font-weight: bold;
+    }
+
+    .title h1 {
+        font-size: 24px;
+        margin: 20px 0;
+    }
+
+    .bio img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 20px 0;
+    }
+
+    .bio p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 20px 0;
+    }
+
+    .art img {
+        width: 100%;
+        border-radius: 10px;
+    }

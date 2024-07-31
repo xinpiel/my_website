@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Mobile Design</title>
+    <link rel="stylesheet" href="css/home-mobile.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <div class="nav-item">Home</div>
+            <div class="nav-item" onclick="navigateTo('projects-mobile.html')">Projects & Skills</div>
+            <div class="nav-item" onclick="navigateTo('contact-mobile.html')">Contact</div>
+        </ul>
+    </nav>
+    <div class="intro">
+        <p>Hello, this is <strong>Xin Wang</strong></p>
+    </div>
+    <div class="title">
+        <h1>PhD on <br>Robotics and<br>Computer Vision<br>at Tudelft</h1>
+    </div>
+    <div class="bio">
+        <img src="assets/images/profile.jpeg" alt="Xin Wang">
+        <p>
+            I have over 15 years of experience in the AI field, specializing in computer vision and working on various industrial applications. My expertise extends to generative AI, robotics, NLP, machine learning, AR/VR and more.
+        </p>
+    </div>
+    <div class="art">
+        <img src="assets/images/home_robot.png" alt="Artwork">
+    </div>
+    <script>
+    function navigateTo(url) {
+            window.location.href = url;
+        }</script>
+</body>
+</html>
